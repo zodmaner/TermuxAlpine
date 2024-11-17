@@ -158,6 +158,13 @@ exec proot --link2symlink -0 -r \${PREFIX}/share/TermuxAlpine/ -b /dev/ -b /sys/
 EOF
 
     chmod 700 ${LOGIN_FILE}
+
+    cat > ${HOME}/.bashrc <<-EOF
+
+export PATH="$PATH:/home/smith/.local/bin"
+EOF
+
+    export PATH="$PATH:/home/smith/.local/bin"
 }
 
 remove_installation_files() {
