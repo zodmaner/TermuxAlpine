@@ -154,7 +154,7 @@ EOF
     fi
 
     cat >> ${LOGIN_FILE} <<-EOF
-exec proot --link2symlink -0 -r \${PREFIX}/share/TermuxAlpine/ -b /dev/ -b /sys/ -b /proc/ -b /sdcard -b /storage -b \$HOME -w /root /usr/bin/env TMPDIR=/tmp HOME=/root PREFIX=/usr SHELL=/bin/sh TERM="\$TERM" LANG=\$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login
+exec proot --link2symlink -0 -r \${HOME}/.local/share/proot/alpine/ -b /dev/ -b /sys/ -b /proc/ -b /sdcard -b /storage -b \$HOME -w /root /usr/bin/env TMPDIR=/tmp HOME=/root PREFIX=/usr SHELL=/bin/sh TERM="\$TERM" LANG=\$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login
 EOF
 
     chmod 700 ${LOGIN_FILE}
