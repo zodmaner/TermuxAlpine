@@ -161,10 +161,10 @@ EOF
 
     cat > ${HOME}/.bashrc <<-EOF
 
-export PATH="$PATH:/home/smith/.local/bin"
+export PATH="$PATH:/${HOME}/.local/bin"
 EOF
 
-    export PATH="$PATH:/home/smith/.local/bin"
+    export PATH="$PATH:/${HOME}/.local/bin"
 }
 
 remove_installation_files() {
