@@ -238,6 +238,7 @@ getsha
 checkintegrity
 extract
 createloginfile
+remove_installation_files
 
 
 printf "$blue [*] Configuring Alpine For You ..."
