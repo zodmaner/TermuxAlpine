@@ -136,6 +136,7 @@ extract() {
 # Utility function for login file
 
 createloginfile() {
+    mkdir -p ${HOME}/.local/bin
     LOGIN_FILE=${HOME}/.local/bin/proot-login-alpine
     cat > ${LOGIN_FILE} <<-EOF
 #!/data/data/com.termux/files/usr/bin/bash -e
