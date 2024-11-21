@@ -57,7 +57,7 @@ finaltouchup()
 
     addprofile
 
-    if [ "${1}" = "--add-motd" ]; then
+    if [ "${1-}" = "--add-motd" ]; then
 	    addmotd
     fi
 
