@@ -4,7 +4,7 @@
 # Email : lkpandey950@gmail.com
 ################################################################################
 
-ALPINE_PROOT=${PREFIX}/.local/share/proot/alpine
+ALPINE_PROOT=${HOME}/.local/share/proot/alpine
 
 addprofile()
 {
