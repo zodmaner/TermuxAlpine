@@ -214,7 +214,7 @@ usage() {
 
 MOTD="OFF"
 EXTRAARGS="default"
-if [ ! -z "$1" ]
+if [ ! -z "${1-}" ]
     then
     EXTRAARGS=$1
 fi
