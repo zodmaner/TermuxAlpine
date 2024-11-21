@@ -214,7 +214,7 @@ EOF
     if [ $(getprop ro.build.version.release) ]
     then
         cat >> ${LOGIN_FILE} <<-EOF
-[ \$(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > \${HOME}/.local/share/proot/etc/resolv.conf
+[ \$(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > \${HOME}/.local/share/proot/alpine/etc/resolv.conf
 
 EOF
     fi
