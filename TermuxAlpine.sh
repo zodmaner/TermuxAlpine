@@ -14,6 +14,7 @@ reset='\033[0m'
 # Destination Path
 
 DESTINATION=${HOME}/.local/share/proot/alpine
+LOGIN_FILE=${HOME}/.local/bin/proot-login-alpine
 
 CHOICE=""
 if [ -d ${DESTINATION} ]; then
@@ -137,7 +138,6 @@ extract() {
 
 createloginfile() {
     mkdir -p ${HOME}/.local/bin
-    LOGIN_FILE=${HOME}/.local/bin/proot-login-alpine
     cat > ${LOGIN_FILE} <<-EOF
 #!/data/data/com.termux/files/usr/bin/bash -e
 unset LD_PRELOAD
